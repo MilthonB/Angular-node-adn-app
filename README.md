@@ -10,7 +10,7 @@ Previo al uso de este repositorio se debe de contar con lo siguiente:
 
 [Angular] - Angular
 
-[NodeJS] -  NoSQL
+[NodeJS] -  NodeJS
 
 
 ### Ejecución de forma local 🔧
