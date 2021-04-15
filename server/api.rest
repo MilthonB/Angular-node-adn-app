@@ -1,0 +1,18 @@
+###
+GET http://localhost:4000/api/mutations
+
+###
+GET http://localhost:4000/api/stats
+
+
+###
+GET http://localhost:4000/api/list
+
+
+###
+POST http://localhost:4000/api/mutation
+Content-Type: application/json
+
+{
+    "dna": ["ATtttA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
+} 
