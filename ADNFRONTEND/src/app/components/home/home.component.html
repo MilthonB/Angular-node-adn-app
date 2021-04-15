@@ -1,0 +1,79 @@
+
+  <div class="containe  mt-5 animated fadeIn">
+      <div class="row">
+          <div class="col ml-5">
+              <img src="assets/img/doc-heart.svg" style="width: 90%;"  alt="">
+              <h3 style="text-align: center;" class="mt-5">APP-DNA</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel mollitia illum nulla accusamus quasi veniam aliquid, optio molestias. Aliquid ab nihil voluptatibus, minus illum aspernatur alias exercitationem corporis sit impedit voluptates cupiditate expedita, rem nemo nulla dolor harum eos nam labore. Impedit sed iure minima ducimus officia excepturi obcaecati.</p>
+              
+
+          </div>
+          <div class="col mr-5">
+              <img src="assets/img/logo-adn.svg" style="width: 10%; display: block; margin-left: auto; margin-right: auto;" alt="">
+              <h1 style="text-align: center;">RESULTADOS</h1>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, possimus eveniet nostrum iste fugit a voluptate reprehenderit minima, nam ab dolore molestiae rerum similique ut qui aliquid laudantium eius? Doloribus enim quibusdam asperiores explicabo, nam omnis nostrum dignissimos, accusantium minima odio culpa dolor soluta! Tempora quam repellat dolorum a quis.
+                  
+              </p> 
+             
+              
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <h3 style="text-align: center;" >No Mutaciones</h3>
+                    <img src="assets/img/nurse.svg" class="mt-5" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" alt="">
+                    <h3 style="text-align: center;" class="mt-5" >Cantidad</h3>
+                    <h3 style="text-align: center;" >{{ dnaStatus['count_no_mutation'] }}</h3>
+                </div>
+                <div class="col-sm">
+                    <h3 style="text-align: center;" >Mutaciones</h3>
+                    <img src="assets/img/nurse-w.svg" class="mt-5" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" alt="">
+                    <h3 style="text-align: center;" class="mt-5" >Cantidad</h3>
+                    <h3 style="text-align: center;"  > {{ dnaStatus['count_mutations'] }} </h3>
+                </div>
+                <div class="col-sm">
+                    <h3 style="text-align: center;"  >Ratio</h3>
+                    <img src="assets/img/ratio-pastel.svg" class="mt-5" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" alt="">
+                    <h3 style="text-align: center;" class="mt-5" >Ratio</h3>
+                    <h3 style="text-align: center;" >{{ dnaStatus['ratio'] }}</h3>
+                  </div>
+                </div>
+              </div>
+         </div>
+         
+      </div>
+
+      
+  </div>
+
+
+
+  <div class="row  mt-5 ml-5 mr-5  animated fadeIn ">
+      <div class="col">
+          <img src="assets/img/prueba-de-adn.svg" style="display: block; margin-left: auto; margin-right: auto; width: 5%;" alt="">
+          <h1 style="text-align: center;" > Ultimos 10 resultados </h1>
+        
+        <table class="table table-striped " >
+            <thead style="text-align: center;">
+                <tr>
+                    <th scope="col"># <i class="fas fa-sort-numeric-down"></i></th>
+                    <th scope="col">Cadena de ADN <i class="fas fa-dna"></i></th>
+                    <th scope="col">Resultados <i class="fas fa-poll-h"></i></th>
+                    <th scope="col">Fecha <i class="fas fa-calendar-alt"></i></th>
+                </tr>
+            </thead>
+            <tbody style="text-align: center;">
+                <tr *ngFor="let adn of dnaData; let i = index">
+                    <td > {{ i+1 }}  </td>
+                    <td> {{ adn.dna }} </td>
+                    <td> {{ adn.resultado }} </td>
+                    <td> {{ adn.createdAt | date: 'dd/MM/yyyy' }} </td>
+                </tr>
+            </tbody>
+        </table>
+
+      </div>
+  </div>
+  
+
+  
