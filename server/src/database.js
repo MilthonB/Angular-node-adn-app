@@ -1,6 +1,9 @@
+
+//declaracion de base de datos 
 const mongoose = require('mongoose');
 
-mongoose.connect( process.env.MONGODB_URI ||'mongodb://localhost/mean-employees',{
+//conexion a la base de datos
+mongoose.connect( process.env.MONGODB_URI ||'mongodb://localhost/dan-db',{
     useUnifiedTopology:true,
     useNewUrlParser: true
 })
