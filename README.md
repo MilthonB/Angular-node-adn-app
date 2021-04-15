@@ -5,8 +5,10 @@ Detector de mutaciones en ADN
 ## Comenzando 🚀
 
 Previo al uso de este repositorio se debe de contar con lo siguiente:
-[MongoDB] - Base de datos NoSQL
-[Angular] - Base de datos NoSQL
+[MongoDB] - Base de datos MongoDB
+
+[Angular] - Base de datos Angular
+
 [NodeJS] - Base de datos NoSQL
 
 
