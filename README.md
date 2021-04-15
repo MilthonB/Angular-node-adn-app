@@ -61,18 +61,18 @@ _Ejemplos de peticiones_
 _Esta peticion te regresa los estados, la cantidad de mutaciones y no mutaciones detactadas_
 
 ```
-    GET http://localhost:4000/api/stats
+    GET https://app-node-adn-app.herokuapp.com/api/stats
 ```
 
 _Esta peticion te regresa las ultimas 10 Peticiones_
 
 ```
-    GET http://localhost:4000/api/list 
+    GET https://app-node-adn-app.herokuapp.com/api/list 
 ```
 
-_Para los POST debes de entrar el postman, nueva pestaña eligir la peticion POST poner la url https://app-node-adn-app.herokuapp.com/api/mutation y a body, raw y cambiar la opcion text a JSON_
+_Para los POST debes de entrar el postman, nueva pestaña eligir la peticion POST poner la url https://app-node-adn-app.herokuapp.com/api/mutations y a body, raw y cambiar la opcion text a JSON_
 ```
-  POST http://localhost:4000/api/mutation
+  POST https://app-node-adn-app.herokuapp.com/api/mutations
 {
     "dna": ["ATtttA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
 } 
