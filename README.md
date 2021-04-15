@@ -80,7 +80,7 @@ _Para los POST debes de entrar el postman, nueva pestaña eligir la peticion POS
     "dna": ["ATtttA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
 } 
 ```
-## Visitar el sitio 🛠️
+## Visitar el sitio 
 
 [ADN-APP](https://app-node-adn-app.herokuapp.com/)
 ## Contribuyendo 🖇️
