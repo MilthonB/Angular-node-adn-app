@@ -83,7 +83,7 @@ _Esta petición te regresa todo_
 
 _Para los POST debes de entrar el postman, nueva pestaña elegir la petición POST poner la url https://app-node-adn-app.herokuapp.com/api/mutation y a body, raw y cambiar la opción text a JSON_
 ```
-  POST https://app-node-adn-app.herokuapp.com/api/mutations
+  POST https://app-node-adn-app.herokuapp.com/api/mutation
 {
     "dna": ["ATtttA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
 } 
